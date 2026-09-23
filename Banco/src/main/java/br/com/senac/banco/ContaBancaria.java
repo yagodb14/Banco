@@ -17,6 +17,8 @@ public class ContaBancaria {
         this.saldo = 0.00;
     }  
     
+    
+    
     public String getTitular(){
         return  this.titular;
     }
@@ -49,4 +51,7 @@ public class ContaBancaria {
     public void estratoBancario(){
         System.out.println("Saldo: " + this.saldo);
     }
+    
+     public void apresentar(){}
+   
 }

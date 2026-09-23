@@ -11,17 +11,20 @@ package br.com.senac.banco;
 public class Banco {
 
     public static void main(String[] args) {
-        ContaBancaria conta1 = new ContaBancaria("Yago");
         
-        conta1.depositar(100);
-        conta1.estratoBancario();
-        conta1.sacar(10);
-        conta1.estratoBancario();
+        ContaPF conta01 = new ContaPF("0123456789","Aika");
+        conta01.apresentar();
+        conta01.depositar(50.0);
+        conta01.estratoBancario();
+        conta01.sacar(12.0);
+        conta01.estratoBancario();
         
-        System.out.println(conta1.getTitular());
-        System.out.println(conta1.getSaldo());
-        
-        conta1.setTitular("Yago Daniel");
-        System.out.println(conta1.getTitular());
+        System.out.println("----------");
+        ContaPJ conta2 = new ContaPJ("112233445566","Orlando");
+        conta2.apresentar();
+        conta2.depositar(10.0);
+        conta2.estratoBancario();
+        conta2.sacar(6.0);
+        conta2.estratoBancario();
     }
 }
