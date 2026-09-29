@@ -4,6 +4,8 @@
 
 package br.com.senac.banco;
 
+import java.util.Scanner;
+
 /**
  *
  * @author yago62977756
@@ -11,20 +13,8 @@ package br.com.senac.banco;
 public class Banco {
 
     public static void main(String[] args) {
-        
-        ContaPF conta01 = new ContaPF("0123456789","Aika");
-        conta01.apresentar();
-        conta01.depositar(50.0);
-        conta01.estratoBancario();
-        conta01.sacar(12.0);
-        conta01.estratoBancario();
-        
-        System.out.println("----------");
-        ContaPJ conta2 = new ContaPJ("112233445566","Orlando");
-        conta2.apresentar();
-        conta2.depositar(10.0);
-        conta2.estratoBancario();
-        conta2.sacar(6.0);
-        conta2.estratoBancario();
+        Scanner entrada = new Scanner(System.in);
+         System.out.println("Digite seu nome:");
+         String nome = entrada.nextLine();
     }
 }
