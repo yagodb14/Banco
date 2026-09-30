@@ -36,7 +36,7 @@ public class ContaBancaria {
                 this.saldo = this.saldo + valor;
                 System.out.println("Depósito realizado com sucesso!");
          }else{
-                System.out.println("Valor do depósito invalido!");
+                System.out.println("Valor do depósito inválido!");
          }
             
       }
@@ -50,48 +50,24 @@ public class ContaBancaria {
             System.out.println("Saque insuficiente!!!!");
         }
     }
-    public void estratoBancario(){
-        if(saldo = 0){
-        System.out.println("Saldo igual a zero! ");
-        }else if(saldo = 0){
-        System.out.println("Conta sem saldo");
-        }else(saldo > 0 && saldo <= 500){
-        System.out.println("Valor irregular!!");
-        }else(saldo <5){
-        System.out.println("Valor baixo!");
-        }else(saldo >=500 && saldo <=2000){
-        System.out.println("Valor não encontrado");
-        }else(saldo <= 30000){
-        System.out.println("Saldo normal!");
-        }else(saldo >2000){
-        System.out.println("Saldo acima!!");
-        }else(saldo > 100000){
-        System.out.println("Valor elevado!!");
-    }
-        public void menu(){
-        System.out.println("--------CONTA BANCARIA-----------");
-        switch(titular){
-            case 1:
-              System.out.println("Valor que deseja depositar: ");
-             break;
-            case 2:
-              System.out.println("");
-             break;     
-            case 3:
-              System.out.println("");
-             break; 
-            case 4:
-              System.out.println("");
-             break; 
-            case 5:
-              System.out.println("");
-             break; 
+    
+    public void verificarSaldo(){
+        if (saldo == 0){
+           System.out.println("Conta sem saldo!");
+        }else if (this.saldo > 0 && this.saldo >=500){
+            System.out.println("Saldo baixo!");
+        }else if (this.saldo > 500 && this.saldo <= 2000){
+            System.out.println("saldo normal");
+        }else  if(this.saldo > 2000){
+           System.out.println("Saldo elevado!");
         }
       }
-    } 
+        
+        
+    public void estratoBancario(){
+     System.out.println("Saldo: " + this.saldo);
     
-     public void apresentar(){}
-     
-     
-   
-}
+       
+     }        
+    }  
+    
